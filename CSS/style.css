@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 30px;
+    border-bottom: 2px solid black;
+    background-color: blanchedalmond;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo p{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(0, 80, 253);
+}
+
+.logo span{
+    color: rgb(23, 121, 23);
+}
+
+nav ul{
+display: flex;
+}
+
+ul li{
+    list-style: none;
+    padding: 5px 10px;
+    /* border: 2px solid black; */
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.text-pembuka h1{
+    margin: 20px 0 0 100px;
+}
+
+article p{
+    margin: 10px 0 20px 100px;
+}
+
+article .banner{
+    height: 80vh;
+}
+
+.banner{
+    background-image: url(../Assets/ss1.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
