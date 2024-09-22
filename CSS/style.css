@@ -5,14 +5,17 @@
     /* border: 1px solid; */
 }
 
+body{
+    /* background-color: blanchedalmond; */
+}
+
 .container-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    padding: 0 30px;
+    
+    /* height: 80px; */
+    padding: 10px 30px;
     border-bottom: 2px solid black;
     background-color: blanchedalmond;
+    /* flex-wrap: wrap; */
 }
 
 .logo{
@@ -32,8 +35,16 @@
     color: rgb(23, 121, 23);
 }
 
+nav{
+    /* max-width: 100%; */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
 nav ul{
-display: flex;
+    display: flex;
+    text-align: center;
 }
 
 ul li{
@@ -46,14 +57,24 @@ li a{
     text-decoration: none;
     color: black;
     font-weight: bold;
+    font-family: system-ui;
+}
+
+ .menu-icon {
+    display: none;
+    /* background-color: aquamarine; */
+    font-size: 25px;
+    /* font-weight: 800px; */
 }
 
 .text-pembuka h1{
-    margin: 20px 0 0 100px;
+    margin: 20px 0;
+    text-align: center;
 }
 
 article p{
-    margin: 10px 0 20px 100px;
+    margin: 10px 0 20px 0;
+    text-align: center;
 }
 
 article .banner{
@@ -66,3 +87,276 @@ article .banner{
     background-size:cover;
     background-position: center;
 }
+
+#our-profile{
+    background-color: blanchedalmond;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+    padding-bottom: 50px;
+    
+}
+
+#our-profile h1{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 50px 0 20px 0;
+    font-size: 40px;
+    
+}
+
+.box-our-profile{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.box-images{
+    width: 300px;
+    padding: 10px 20px;
+    box-shadow: 10px 10px 5px rgb(207, 206, 206);
+    background-color: white;
+}
+
+.box-images .images-profile{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.article{
+    text-align: justify;   
+}
+
+.article a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.article button{
+    margin-top: 8px;
+    padding: 8px 10px;
+    background-color: blanchedalmond;
+    border: 2px solid rgb(120, 111, 98);;
+    border-radius: 5px;
+}
+
+.article button i{
+    margin-left: 10px;
+}
+
+#portofolio{
+    padding: 50px 20px 50px 20px; 
+    background-color: blanchedalmond;
+    border-bottom: 2px solid black;
+}
+
+#portofolio >h1{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0 0 30px 0;
+    font-size: 40px;
+}
+
+.container-portofolio{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.images-portofolio{
+    display: flex;
+    justify-content: center;
+}
+
+.images-portofolio img{
+    max-width: 100%;
+}
+
+.article-portofolio{
+    width: 700px;
+}
+
+.article-portofolio a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.article-portofolio p{
+    font-size: 20px;
+    line-height: 23px;
+    text-align: justify;
+}
+
+.article-portofolio button{
+    margin-top: 8px;
+    padding: 8px 10px;
+    background-color: blanchedalmond;
+    border: 2px solid rgb(120, 111, 98);;
+    border-radius: 5px;
+}
+
+.article-portofolio button i{
+    margin-left: 10px;
+}
+
+#message-us{
+    padding: 50px 20px 50px 20px; 
+    background-color: blanchedalmond;
+    border-bottom: 2px solid black;
+
+}
+
+#message-us h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container-message-us{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px; 
+}
+
+form{
+    max-width: 100%;
+    width: 500px;
+}
+
+label{
+    font-size: 20px; 
+}
+
+input{
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="date"]{
+    max-width:100%;
+    width: 430px;
+    margin-top: 5px;
+}
+
+.text {
+    font-size: 18px;
+}
+
+textarea{
+    resize: none;
+    height: 100px;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 10px;
+    width: 430px;
+    max-width: 100%;
+    margin-top: 5px;
+    
+}
+
+#submit{
+    max-width: 100%;
+    width: 430px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    padding: 5px 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.output-form{
+    height: 250px;
+    /* background-color: antiquewhite; */
+    width: 500px;
+    border: 2px solid;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgb(0, 0, 0);
+    padding: 50px 20px;
+    gap: 20px;
+ 
+}
+
+.logo-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer p{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(0, 80, 253);
+}
+
+.logo-footer span{
+    color: rgb(23, 121, 23);
+}
+
+.list-footer li{
+    list-style: none;
+    margin-bottom: 15px;
+    text-align: center;
+    
+}
+
+.list-footer li a{
+    color: white;
+}
+
+.container-footer > div h1{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 728px) {
+    nav{
+        flex-wrap: wrap;
+    }
+    
+    nav ul{
+        /* display: none; */
+        flex-direction: column;
+        width: 100%; 
+    }
+
+    nav ul.hidden{
+        display: none;
+    }
+   
+    .menu-icon{
+        display: flex;
+    }
+
+    label{
+        font-size: 16px; 
+    }
+
+    .text{
+        font-size: 16px;
+    }
+}
+
+
