@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid white; */
+  /* border: 1px solid black; */
 }
 
 .container-header {
@@ -66,23 +66,51 @@ li a {
 .text-pembuka h1 {
   margin: 20px 0;
   text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 article p {
   margin: 10px 0 20px 0;
   text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
-article .banner {
-  height: 80vh;
-}
 
 .banner {
-  background-image: url(../Assets/ss1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+ position: relative;
 }
+
+.banner img{
+  width: 100%;
+  height: 80vh;
+  
+}
+
+.banner button{
+  display: inline-block;
+  position: absolute;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+}
+
+.banner .button-back{
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.banner .button-next{
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+
 
 #our-profile {
   background-color: blanchedalmond;
@@ -399,6 +427,11 @@ ul li a:hover {
   .article-portofolio p {
     font-size: 16px;
     line-height: 23px;
+  }
+  
+  .banner button{
+
+    font-size: 20px;
   }
 }
 
