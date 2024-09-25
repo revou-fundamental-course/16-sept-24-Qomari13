@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="CSS\style.css">
+    <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
     <header class="container-header"> 
         <nav>
             <div class="logo">
-                <img src="Assets/logo.png" alt="surabaya" width="70px">
+                <img src="assets/logo.png" alt="surabaya" width="70px">
                 <p>Sura<span>baya</span></p>
             </div>
             <div class="menu-icon" id="menu-icon">
@@ -28,32 +28,32 @@
     </header>
 
     <main>
+        <!-- Section Home -->
         <section id="home">
             <header class="text-pembuka">
-                <h1>Hi <span id="user">User</span>, Welcome To Website</h1>
+                <h1>Hi <span id="user">User</span>, Welcome To my Website</h1>
             </header>
             <article>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quam?</p>
             </article>
             <div class="banner">
-               
-                <img src="Assets/surabaya.jpg" alt="" class="img-slideshow">
-                <img src="Assets/R.jpg" alt="" class="img-slideshow">
-                <img src="Assets/kota.jpg" alt="" class="img-slideshow">
-                <button onclick="plusDivs(-1)" class="button-back"> < </button>
-                <button onclick="plusDivs(1)" class="button-next">></button>
-            
+                <img src="assets/surabaya.jpg" alt="" class="img-slideshow">
+                <img src="assets/R.jpg" alt="" class="img-slideshow">
+                <img src="assets/kota.jpg" alt="" class="img-slideshow">
+                <button onclick="plusDivs(-1)" class="button-back"> &lt; </button>
+                <button onclick="plusDivs(1)" class="button-next">&gt;</button>
             </div>
-            
         </section>
 
+
+        <!-- Section Profile -->
         <section id="our-profile">
             <h1>Wisata di Surabaya</h1>
 
             <div class="box-our-profile">
                 <div class="box-images">
                     <div class="images-profile">
-                        <img src="Assets/snq.jpg" alt="kbs" width="250px">
+                        <img src="assets/snq.jpg" alt="kbs" width="250px">
                     </div>
                     <div class="title">
                         <h3>Surabaya North Quay</h3>
@@ -66,7 +66,7 @@
 
                 <div class="box-images">
                     <div class="images-profile">
-                        <img src="Assets/klenteng.jpg" alt="kbs" width="250px">
+                        <img src="assets/klenteng.jpg" alt="kbs" width="250px">
                     </div>
                     <div class="title">
                         <h3>Klenteng Sanggar Agung</h3>
@@ -79,7 +79,7 @@
 
                 <div class="box-images">
                     <div class="images-profile">
-                        <img src="Assets/kbs.jpg" alt="kbs" width="250px">
+                        <img src="assets/kbs.jpg" alt="kbs" width="250px">
                     </div>
                     <div class="title">
                         <h3>Kebun Binatang Surabaya</h3>
@@ -92,7 +92,7 @@
 
                 <div class="box-images">
                     <div class="images-profile">
-                        <img src="Assets/kembang.jpg" alt="kbs" width="250px">
+                        <img src="assets/kembang.jpg" alt="kbs" width="250px">
                     </div>
                     <div class="title">
                         <h3>Kembang Jepun Surabaya</h3>
@@ -105,11 +105,12 @@
             </div>
         </section>
 
+        <!-- Section Portofolio -->
         <section id="portofolio">
             <h1>Portofolio</h1>
             <div class="container-portofolio">
                 <div class="images-portofolio">
-                    <img src="Assets/sby.webp" alt="kota surabaya" width="500px">
+                    <img src="assets/sby.webp" alt="kota surabaya" width="500px">
                 </div>
                 <div class="article-portofolio">
                     <h1>Kota Surabaya</h1>
@@ -120,16 +121,16 @@
                         Surabaya memiliki luas sekitar ±335,28 km², dan 3.000.076 jiwa penduduk pada pertengahan tahun 2023.[9] Daerah megalopolitan Surabaya yang berpenduduk sekitar 10 juta jiwa, adalah kawasan metropolitan terbesar kedua di Indonesia setelah Jabodetabek.</p>
                         <button><a href="https://id.wikipedia.org/wiki/Kota_Surabaya">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a></button>
                 </div>
-                
             </div>
         </section>
 
+        <!-- Section Message Us -->
         <section id="message-us">
             <h1>Message US</h1>
             <div class="container-message-us">
                 
                     
-                <form name="message-form" onsubmit="return validateForm()">
+                <form  name="message-form" onsubmit="return validateForm()">
                        
                     <label for="name">Nama:</label><br>
                     <input type="text" id="name" placeholder="Nama" name="full-name"><br>
@@ -150,7 +151,7 @@
                         <p id="error-gender"></p>
                     
                     <label for="messages">Pesan:</label><br>
-                    <textarea name="messages" id="messages"></textarea> <br>
+                    <textarea name="messages" id="messages" placeholder="Masukkan Pesan"></textarea> <br>
                     <p id="error-messages"></p>
                     
 
@@ -167,14 +168,14 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="container-footer">
-            <!-- <div class="container-logo"> -->
             <div class="logo-footer">
-                <img src="Assets/logo.png" alt="surabaya" width="150px">
+                <img src="assets/logo.png" alt="surabaya" width="150px">
                 <p>Sura<span>baya</span></p>
             </div>
-        <!-- </div> -->
+   
 
             <div class="list-footer">
                 <li><a href="#home">Home</a></li>
@@ -189,6 +190,6 @@
 
         </div>
     </footer>
-    <script src="JS/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
